@@ -1,0 +1,38 @@
+fragment ContentNodeSEOFragment on PostTypeSEO {
+  canonical
+  breadcrumbs {
+    text
+    url
+  }
+  schema {
+    raw
+  }
+
+  metaDesc
+  metaKeywords
+  metaRobotsNofollow
+  metaRobotsNoindex
+
+  opengraphAuthor
+  opengraphType
+  opengraphTitle
+  opengraphDescription
+  opengraphModifiedTime
+  opengraphPublishedTime
+  opengraphPublisher
+  opengraphSiteName
+  opengraphUrl
+  opengraphImage {
+    altText
+    link
+    srcSet
+    title
+    uri
+  }
+
+  title
+  twitterDescription
+  twitterTitle
+
+  readingTime
+}

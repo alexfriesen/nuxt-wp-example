@@ -1,0 +1,34 @@
+#import '~~/queries/fragments/ContentNodeSEO.fragment.gql';
+
+fragment ContentNode on ContentNode {
+  # contentType
+  contentTypeName
+  # databaseId
+  # date
+  dateGmt
+  # desiredSlug
+  # editingLockedBy
+  # enclosure
+  # enqueuedScripts
+  # enqueuedStylesheets
+  # guid
+  id
+  isContentNode
+  isPreview
+  isRestricted
+  isTermNode
+  # lastEditedBy
+  link
+  # modified
+  modifiedGmt
+  # previewRevisionDatabaseId
+  # previewRevisionId
+  slug
+  status
+  # template
+  uri
+
+  seo {
+    ...ContentNodeSEOFragment
+  }
+}

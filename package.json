@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-wp-example",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "pnpm run -r dev",
+    "build": "pnpm run -r build",
+    "lint": "pnpm run -r lint",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "overrides": {
+    "tailwindcss": "4.0.7",
+    "@tailwindcss/node": "4.0.7",
+    "@tailwindcss/postcss": "4.0.7",
+    "@tailwindcss/vite": "4.0.7"
+  },
+  "resolutions": {
+    "tailwindcss": "4.0.7",
+    "@tailwindcss/postcss": "4.0.7",
+    "@tailwindcss/vite": "4.0.7"
+  },
+  "packageManager": "pnpm@10.5.2"
+}
