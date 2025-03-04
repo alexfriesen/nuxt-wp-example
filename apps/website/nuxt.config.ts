@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/image',
     'nuxt-graphql-middleware',
+    '@radya/nuxt-dompurify',
   ],
   css: ['~/assets/css/main.css'],
   graphqlMiddleware: {

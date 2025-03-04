@@ -49,7 +49,7 @@ function previousPage() {
 
             <UCard v-for="post in items" :key="post.id">
                 <h2 class="text-xl">{{ post.title }}</h2>
-                <div v-sanitize="post.excerpt" class="text-sm text-"></div>
+                <div v-sanitize-html="post.excerpt" class="text-sm text-"></div>
 
                 <template #footer>
                     <div class="flex items-center justify-between">

@@ -24,6 +24,7 @@
     "@nuxt/image": "^1.9.0",
     "@nuxt/test-utils": "^3.17.1",
     "@nuxt/ui": "next",
+    "@radya/nuxt-dompurify": "^1.0.5",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.13.8",
     "@vitest/coverage-v8": "^2.1.9",
@@ -33,7 +34,6 @@
     "nuxt-graphql-middleware": "^4.3.2",
     "typescript": "^5.8.2",
     "vitest": "^2.1.9",
-    "vue-sanitize-directive": "^0.2.1",
     "vue-tsc": "^2.2.8"
   }
 }

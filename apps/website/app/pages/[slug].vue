@@ -15,22 +15,22 @@ const { status, data } = await useAsyncData(`page/${slug}`, () => $fetch(`/api/w
 
 useSeoMeta({
     title: data.value?.title,
-    // description: data.value?.seo.metaDesc,
+    description: data.value?.seo.metaDesc,
 
-    // robots: {
-    //     follow: data.value?.seo.follow === 'follow',
-    //     nofollow: data.value?.seo.nofollow === 'nofollow',
-    //     index: data.value?.seo.index === 'index',
-    //     noindex: data.value?.seo.noindex === 'noindex',
-    // },
+    robots: {
+        follow: data.value?.seo.follow === 'follow',
+        nofollow: data.value?.seo.nofollow === 'nofollow',
+        index: data.value?.seo.index === 'index',
+        noindex: data.value?.seo.noindex === 'noindex',
+    },
 
-    // ogType: data.value?.seo.opengraphType,
-    // ogTitle: data.value?.seo.opengraphTitle,
-    // ogDescription: data.value?.seo.opengraphDescription,
-    // ogSiteName: data.value?.seo.opengraphSiteName,
+    ogType: data.value?.seo.opengraphType,
+    ogTitle: data.value?.seo.opengraphTitle,
+    ogDescription: data.value?.seo.opengraphDescription,
+    ogSiteName: data.value?.seo.opengraphSiteName,
 
-    // twitterTitle: data.value?.seo.twitterTitle,
-    // twitterDescription: data.value?.seo.twitterDescription,
+    twitterTitle: data.value?.seo.twitterTitle,
+    twitterDescription: data.value?.seo.twitterDescription,
 })
 </script>
 
@@ -38,7 +38,7 @@ useSeoMeta({
     <UContainer class="flex flex-col h-full py-4">
         <article class="prose dark:prose-invert lg:prose-xl">
             <h2>{{ data?.title }}</h2>
-            <div v-sanitize="data?.content"></div>
+            <div v-sanitize-html="data?.content"></div>
         </article>
     </UContainer>
 </template>
