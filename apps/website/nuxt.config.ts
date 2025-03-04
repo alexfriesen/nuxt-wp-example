@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   graphqlMiddleware: {
     graphqlEndpoint: 'http://localhost:8080/graphql',
-    downloadSchema: true,
+    downloadSchema: false,
     codegenConfig: {
       skipTypename: true,
       useTypeImports: true,
