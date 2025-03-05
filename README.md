@@ -34,4 +34,7 @@ If you want to try out the system with a local Wordpress installation, you can u
 
 You tweak the GraphQL Data to your liking in the `apps/website/queries` folder.
 
-!NOTICE: make sure to enable "Enable Public Introspection" in the WPGraphQL settings and enable graphqlMiddleware.downloadSchema in the nuxt.config.ts file.
+> Hint: make sure to enable "Enable Public Introspection" in the WPGraphQL settings and enable graphqlMiddleware.downloadSchema in the nuxt.config.ts file.
+
+## Credits
+- Check out [WPNuxt](https://wpnuxt.com/) for a more mature and flexible setup
