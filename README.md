@@ -37,4 +37,4 @@ You tweak the GraphQL Data to your liking in the `apps/website/queries` folder.
 > Hint: make sure to enable "Enable Public Introspection" in the WPGraphQL settings and enable graphqlMiddleware.downloadSchema in the nuxt.config.ts file.
 
 ## Credits
-- Check out [WPNuxt](https://wpnuxt.com/) for a more mature and flexible setup
+- Check out [WPNuxt](https://github.com/wpnuxt/wpnuxt-core) for a more mature and flexible setup
